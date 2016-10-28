@@ -43,9 +43,12 @@ def takeScreenshot():
         else:
             print "No capture methods available"
             sys.exit(1)
-    
+
     if captureMethod == "screen":
-        os.system("screencapture capture/screenshot_" + str(int(time.time())) + ".png")
+        # Change the parameters for the screencapture line below to suit your needs
+        # The line below captures an area of 800x450 pixels starting in the top left corner
+        # Remove '-x -R0,0,800,450' from the line below to capture the entire screen
+        os.system("screencapture -x -R0,0,800,450 capture/screenshot_" + str(int(round(time.time()*1000))) + ".png")
     elif captureMethod == "gtk":
         import gtk.gdk
 
