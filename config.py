@@ -4,6 +4,6 @@
 
 
 # This defines the number of shots to take
-CAPTURE_NUM = 20
+CAPTURE_NUM = 100
 # This is the delay between screenshots (in seconds)
-CAPTURE_DELAY = 1
+CAPTURE_DELAY = 0.2
