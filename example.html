@@ -2,7 +2,9 @@
 <html>
 
 <head>
-<script type="text/javascript" src="example_anim.js"></script>
+<!--Comment the line below and uncomment the line below that to use the built-in example instead of your own capture-->
+<script type="text/javascript" src="capture_anim.js"></script>
+<!--<script type="text/javascript" src="example_anim.js"></script>-->
 <script type="text/javascript">
 var delay_scale = 0.7
 var timer = null
@@ -120,14 +122,16 @@ function set_animation(img_url, timeline, canvas_id, fallback_id)
 
 <body>
 
-<p>Example Animation. Please ensure you've run anim_encoder.py to generate the required data.
+<p>Sample Animation. Please ensure you've run anim_encoder.py to generate the required data.
 
 <div><canvas id="anim_target" class="anim_target" width="800" height="450">
 <div id="anim_fallback" class="anim_target" style="width: 800px; height: 450px; position: relative;"></div>
 <p></canvas></div>
 
 <script>
-set_animation("example_packed.png", example_timeline, 'anim_target', 'anim_fallback');
+//Comment the line below and uncomment the line below that to use the built-in example instead of your own capture
+set_animation("capture_packed.png", capture_timeline, 'anim_target', 'anim_fallback');
+//set_animation("example_packed.png", example_timeline, 'anim_target', 'anim_fallback');
 </script>
 
 </body>
