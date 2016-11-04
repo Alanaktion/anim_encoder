@@ -35,7 +35,7 @@ brew install gcc
 pip install scipy
 # Install PIL
 pip install http://effbot.org/media/downloads/Imaging-1.1.7.tar.gz
-brew tap homebrew/science && brew install —HEAD opencv3
+brew tap homebrew/science && brew install --HEAD opencv3
 brew install libpng libjpeg pygtk pngcrush
 # Commands directly below required for virtualenv users only (parts of the paths below may be different for you)
 cp /usr/local/Cellar/opencv3/HEAD-2038434_4/lib/python2.7/site-packages/cv2.so ~/.virtualenvs/anim_encoder/lib/python2.7/site-packages/.
