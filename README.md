@@ -23,6 +23,7 @@ Installing on MacOS requires significantly more steps. Tested on MacOS Sierra 10
 brew install python
 # Add brew path to bash_profile if not already present
 echo "export PATH=/usr/local/bin:$PATH" >> ~/.bash_profile
+echo "export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH" >> ~/.bash_profile
 source ~/.bash_profile
 # virtualenv steps below recommended but not required
 pip install virtualenv virtualenvwrapper
@@ -32,9 +33,7 @@ mkvirtualenv anim_encoder
 # Install dependencies
 pip install numpy
 brew install gcc
-pip install scipy
-# Install PIL
-pip install http://effbot.org/media/downloads/Imaging-1.1.7.tar.gz
+pip install scipy pillow
 brew tap homebrew/science && brew install --HEAD opencv3
 brew install libpng libjpeg pygtk pngcrush
 # Commands directly below required for virtualenv users only (parts of the paths below may be different for you)
