@@ -35,7 +35,7 @@ from numpy import *
 from time import time
 
 # How long to wait before the animation restarts
-END_FRAME_PAUSE = 4000
+END_FRAME_PAUSE = 3000
 
 # How many pixels can be wasted in the name of combining neighbouring changed
 # regions.
